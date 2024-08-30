@@ -50,7 +50,6 @@ jobs:
           args: --verbose \
             --unreleased \
             --tag v${{ needs.find-version.outputs.version }} \
-            --github-repo ${{ github.repository }}
 
   # prepare GitHub release
   draft-github-release:
